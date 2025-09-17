@@ -6,11 +6,11 @@ import 'package:task_app/solutions/solutions.dart';
 const List<Task> chapter3TaskList = [
   Task(
     taskModel: t_3_3_8_1,
-    // solution: S3381(),
+    solution: S3381(),
   ),
   Task(
     taskModel: t_3_3_8_2,
-    // solution: S3382(),
+    solution: S3382(),
   ),
   Task(
     taskModel: t_3_3_8_3,
@@ -44,7 +44,7 @@ const List<Task> chapter4TaskList = [
   ),
   Task(
     taskModel: t_4_5_2_1,
-    //solution: S4521(),
+    solution: S4521(),
   ),
   Task(
     taskModel: t_4_5_2_2,
@@ -52,7 +52,7 @@ const List<Task> chapter4TaskList = [
   ),
   Task(
     taskModel: t_4_5_2_3,
-    // solution: S4523(),
+    solution: S4523(),
   ),
   Task(
     taskModel: t_4_5_2_4,
@@ -60,23 +60,23 @@ const List<Task> chapter4TaskList = [
   ),
   Task(
     taskModel: t_4_5_3_1,
-    //solution: S4531(),
+    solution: S4531(),
   ),
   Task(
     taskModel: t_4_5_3_2,
-    //solution: S4532(),
+    solution: S4532(),
   ),
   Task(
     taskModel: t_4_5_3_3,
-    //solution: S4533(),
+    solution: S4533(),
   ),
   Task(
     taskModel: t_4_5_3_4,
-    //solution: S4534(),
+    solution: S4534(),
   ),
   Task(
     taskModel: t_4_5_3_5,
-    //solution: S4535(),
+    solution: S4535(),
   ),
   Task(
     taskModel: t_4_5_3_6,

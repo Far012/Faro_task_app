@@ -4,6 +4,23 @@ class S4534 extends StatelessWidget {
   const S4534({super.key});
   @override
   Widget build(BuildContext context) {
-    throw UnimplementedError();
+    return SpaceInRowWidget();
+  }
+}
+
+class SpaceInRowWidget extends StatelessWidget {
+  const SpaceInRowWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Text("App"),
+        SizedBox(
+          width: 64,
+        ),
+        Text("Akademie")
+      ],
+    );
   }
 }
