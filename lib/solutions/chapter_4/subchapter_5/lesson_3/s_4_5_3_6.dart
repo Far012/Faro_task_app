@@ -6,12 +6,12 @@ class S4536 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final List<Product> products = [
-      Product(name: "Hose", price: 139.99),
-      Product(name: "T-Shirt", price: 24.99),
-      Product(name: "Pullover", price: 39.99),
-      Product(name: "Jacke", price: 299.99),
-      Product(name: "Schuhe", price: 139.99),
-      Product(name: "Hemd", price: 89.99),
+      Product(name: "Hose", price: "139,99"),
+      Product(name: "T-Shirt", price: "24,99"),
+      Product(name: "Pullover", price: "39,99"),
+      Product(name: "Jacke", price: "299,99"),
+      Product(name: "Schuhe", price: "139,99"),
+      Product(name: "Hemd", price: "89,99"),
     ];
 
     return ListView(
@@ -29,7 +29,7 @@ class S4536 extends StatelessWidget {
 
 class Product {
   String name;
-  double price;
+  String price;
 
   Product({required this.name, required this.price});
 }
