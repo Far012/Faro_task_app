@@ -10,17 +10,15 @@ class S4535 extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              ColorfulRectangle(
-                backgroundColors: Colors.red,
-              ),
-              ColorfulRectangle(backgroundColors: Colors.green),
+              ColorfulRectangle(Colors.red),
+              ColorfulRectangle(Colors.green),
             ],
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              ColorfulRectangle(backgroundColors: Colors.blue),
-              ColorfulRectangle(backgroundColors: Colors.yellow)
+              ColorfulRectangle(Colors.blue),
+              ColorfulRectangle(Colors.yellow)
             ],
           )
         ],
@@ -32,7 +30,10 @@ class S4535 extends StatelessWidget {
 class ColorfulRectangle extends StatelessWidget {
   final Color backgroundColors;
 
-  const ColorfulRectangle({super.key, required this.backgroundColors});
+  const ColorfulRectangle(
+    this.backgroundColors, {
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

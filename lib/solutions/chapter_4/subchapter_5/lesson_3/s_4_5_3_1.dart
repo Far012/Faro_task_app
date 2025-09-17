@@ -6,9 +6,9 @@ class S4531 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        BlueContainers(backgroundColors: Colors.blueGrey),
-        BlueContainers(backgroundColors: Colors.blue),
-        BlueContainers(backgroundColors: Colors.cyan)
+        BlueContainers(Colors.blueGrey),
+        BlueContainers(Colors.blue),
+        BlueContainers(Colors.cyan)
       ],
     );
   }
@@ -17,7 +17,7 @@ class S4531 extends StatelessWidget {
 class BlueContainers extends StatelessWidget {
   final Color backgroundColors;
 
-  const BlueContainers({super.key, required this.backgroundColors});
+  const BlueContainers(this.backgroundColors, {super.key});
 
   @override
   Widget build(BuildContext context) {
