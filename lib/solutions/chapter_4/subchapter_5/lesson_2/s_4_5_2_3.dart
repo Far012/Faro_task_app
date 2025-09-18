@@ -8,11 +8,29 @@ class S4523 extends StatelessWidget {
   }
 }
 
-class MyNameWidget extends StatelessWidget {
-  const MyNameWidget({super.key});
+class MyNameWidget extends StatefulWidget {
+  String name = "";
+
+  MyNameWidget({super.key});
 
   @override
+  State<MyNameWidget> createState() => _MyNameWidgetState();
+}
+
+class _MyNameWidgetState extends State<MyNameWidget> {
+  @override
   Widget build(BuildContext context) {
-    return const Text("MUSS NOCH BEARBEITET WERDEN");
+    return Column(
+      children: [
+        Text(widget.name),
+        ElevatedButton(
+            onPressed: () {
+              setState(() {
+                widget.name = "Faro";
+              });
+            },
+            child: Text("Name anzeigen"))
+      ],
+    );
   }
 }
